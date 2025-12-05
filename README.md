@@ -1,7 +1,7 @@
-🌟 Kyras Champions
+ Kyras Champions
 A 3-page responsive React website featuring dynamic navigation, semantic HTML5 structure, and custom styling.
 Created for the Web Final Project.
-🚀 Project Overview
+ Project Overview
 Kyras Champions is a React-based website designed to demonstrate:
 Responsive layout
 Semantic HTML
@@ -11,7 +11,7 @@ Custom CSS styling (media queries, flexbox, typography, positioning)
 Organized folder structure
 Image optimization (srcset and responsive assets)
 This project is built according to the course requirements and rubric, including composition, styling, and responsive design.
-📁 File Structure
+ File Structure
 kyras-champions/
 │
 ├── public/
@@ -39,7 +39,7 @@ kyras-champions/
 │
 ├── package.json
 └── README.md
-🖥️ Technologies Used
+ Technologies Used
 React
 JavaScript (ES6+)
 CSS3
@@ -47,43 +47,43 @@ HTML5
 Responsive Design
 Flexbox / Positioning
 Image optimization
-📌 Features
-✔ Three Fully Designed Pages
+ Features
+ Three Fully Designed Pages
 Home – introduction and hero section
 Team – showcases champions
 Contact – simple contact layout
-✔ Global Navigation Bar
+ Global Navigation Bar
 Reusable React component (Nav.jsx) with mobile styling.
-✔ Global Footer
+ Global Footer
 Sticky footer component (Footer.jsx).
-✔ Responsive CSS
+ Responsive CSS
 Media queries
 Flexbox
 Sticky navigation
 Relative units (em, rem, %)
 rgba() and hex color usage
-✔ Optimized Images
+ Optimized Images
 Inside /src/assets with responsive versions.
-📦 Installation & Running the Project
+ Installation & Running the Project
 1. Install dependencies
 npm install
 2. Start development server
 npm start
 This will open the project at:
 http://localhost:3000
-🌐 Deployment Options
+ Deployment Options
 You can run this project on:
 GitHub Pages
 Vercel
 Netlify
 CodeSandbox
-🧩 How Navigation Works
+ How Navigation Works
 Routing is controlled inside App.jsx.
 Components for each page are stored in /src/pages.
 Home.jsx
 Team.jsx
 Contact.jsx
-📝 Author
+ Author
 Mario Benavidez
 Web Development Student
 “Kyras Champions” Project
