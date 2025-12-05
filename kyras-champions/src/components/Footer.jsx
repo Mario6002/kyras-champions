@@ -5,7 +5,7 @@ export default function Footer() {
     <footer className="site-footer">
       <p>© {new Date().getFullYear()} Kyra's Champions — All rights reserved.</p>
       <p>
-        <a href="https://github.com/yourusername/kyras-champions" target="_blank" rel="noopener noreferrer">
+        <a href="https://github.com/mario6002/kyras-champions" target="_blank" rel="noopener noreferrer">
           GitHub Repo
         </a>
       </p>
