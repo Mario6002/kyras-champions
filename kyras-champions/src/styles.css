@@ -1,1 +1,167 @@
-body { font-family: sans-serif; }
+/* Base */
+:root {
+  --brand: #1f7a6f; /* hex */
+  --muted: rgba(0,0,0,0.6); /* rgba */
+  --max-width: 1100px;
+  font-size: 100%; /* relative */
+}
+
+body {
+  margin: 0;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  color: var(--muted);
+  line-height: 1.5;
+}
+
+/* Header / Nav */
+.nav {
+  background: linear-gradient(90deg, #ffffff, #f7f7f7);
+  border-bottom: 1px solid #eee;
+  position: sticky; /* sticky nav */
+  top: 0;
+  z-index: 50;
+}
+
+.nav-list {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+  margin: 0;
+  padding: 0.75rem 1rem;
+  max-width: var(--max-width);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.nav-list a {
+  text-decoration: none;
+  color: var(--brand);
+  font-weight: 600;
+  padding: 0.25rem 0.5rem;
+}
+
+/* pseudo-class + transition */
+.nav-list a:hover,
+.nav-list a:focus {
+  background: rgba(31,122,111,0.1);
+  border-radius: 8px;
+  transition: background 200ms ease;
+}
+
+/* Layout */
+.app {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+/* Home */
+.home .hero-wrapper {
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.hero {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  max-width: 900px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+
+/* Team list */
+.team-list {
+  list-style: none;
+  padding: 0;
+}
+
+.team-item {
+  display: flex;
+  gap: 1rem;
+  margin: 1rem 0;
+  align-items: center;
+}
+
+/* thumbnail */
+.thumb {
+  width: 160px;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* lightbox using :target */
+.lightbox {
+  display: none;
+}
+
+.lightbox:target {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  background: rgba(0,0,0,0.75);
+  align-items: center;
+  justify-content: center;
+  z-index: 200;
+  padding: 2rem;
+}
+
+.lightbox img {
+  max-width: 90%;
+  height: auto;
+  border-radius: 6px;
+}
+
+.lightbox .close {
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  color: white;
+  font-size: 2rem;
+  text-decoration: none;
+}
+
+/* Form styling: descendant selectors */
+.contact-form label {
+  display: block;
+  margin-top: 0.5rem;
+}
+
+.input {
+  display: block;
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.25rem;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+}
+
+/* Button */
+.btn {
+  margin-top: 0.75rem;
+  background: var(--brand);
+  color: #fff;
+  border: none;
+  padding: 0.6rem 1rem;
+  border-radius: 6px;
+}
+
+/* responsive nav -> column when narrow */
+@media (max-width: 720px) {
+  .nav-list {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .team-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+/* Prevent horizontal overflow */
+* {
+  box-sizing: border-box;
+}
